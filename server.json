@@ -1,0 +1,10 @@
+{
+  "reservations": [
+    {
+      "id": 1,
+      "client_name": "Wellington Wesley",
+      "date": "2024-07-01",
+      "time": "14:00"
+    }
+  ]
+}
