@@ -3,11 +3,12 @@ import dayjs from "dayjs"
 const form = document.querySelector("form")
 const selectedDate = document.querySelector("#date")
 
-// Carrega a data atual.
-selectedDate.value = dayjs(new Date()).format("YYYY-MM-DD")
+// Data atual.
+const todayDate = dayjs(new Date()).format("YYYY-MM-DD")
 
-// Define a data mínima sendo a data atual
-selectedDate.min = dayjs(new Date()).format("YYYY-MM-DD")
+// Carrega a data atual e define a data mínima sendo a data atual.
+selectedDate.value = todayDate
+selectedDate.min = todayDate
 
 form.addEventListener("submit", (event) => {
   event.preventDefault()
