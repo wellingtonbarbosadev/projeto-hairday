@@ -1,4 +1,4 @@
-import { dayjs } from "dayjs";
+import dayjs from "dayjs";
 
 // Selecionas as sessões (manhã, tarde e noite).
 const periodMorning = document.querySelector("#period-morning")
@@ -23,7 +23,7 @@ export function schedulesShow({ dailySchedules }) {
       time.textContent = dayjs(schedule.when).format("HH:mm")
       name.textContent = schedule.name
 
-      image.setAttribute("src", "./assets/cancel.svg")
+      image.setAttribute("src", "./src/assets/cancel.svg")
       image.setAttribute("alt", "Cancelar")
       image.classList.add("cancel-icon")
 
@@ -32,7 +32,7 @@ export function schedulesShow({ dailySchedules }) {
       const hour = dayjs(schedule.when).hour()
       if (hour <= 12) {
         periodMorning.appendChild(item)
-      } else if (hour >= 13 && hour <= 18) {
+      } else if (hour > 12 && hour <= 18) {
         periodAfternoon.appendChild(item)
       } else {
         periodNight.appendChild(item)
