@@ -28,7 +28,6 @@ module.exports = {
       directory: path.resolve(__dirname, "dist"),
     },
     port: 3050,
-    open: true,
     liveReload: true,
   },
 
