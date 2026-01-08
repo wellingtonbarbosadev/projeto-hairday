@@ -8,23 +8,16 @@ export function hoursLoad({ date, dailySchedules }) {
   // Limpa a lista.
   hours.innerHTML = ""
 
+  // Obtém a lista de horas agendadas.
   const scheduledHours = dailySchedules.map((schedule) => 
     dayjs(schedule.when).hour()
   )
   
   const opening = openingHours.map((hour) => {
     const [scheduleHour] = hour.split(":")
-    const isHourPast = dayjs(date).add(scheduleHour, "hour").isAfter(dayjs())
+    const isHourPast = dayjs(date).add(scheduleHour, "hour").isBefore(dayjs())
     
-    let hourScheduled = scheduledHours.includes(Number(scheduleHour))
-
-    if (hourScheduled && !isHourPast) {
-      var available = false
-    } else if(!hourScheduled && isHourPast){
-      var available = true
-    } else {
-      var available = false
-    }
+    const available = !scheduledHours.includes(Number(scheduleHour)) && !isHourPast
     
     return {
       hour,
