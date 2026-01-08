@@ -5,6 +5,8 @@ const periods = document.querySelectorAll('.period')
 // Gerar evento de click para cada lista.
 periods.forEach((period) => {
   period.addEventListener("click", (event) => {
+
+    // Verifica se o click foi no ícone de excluir.
     const removeButton = event.target.classList.contains("cancel-icon")
 
     if (removeButton) {
@@ -15,6 +17,7 @@ periods.forEach((period) => {
         const isConfirm = confirm("Tem certeza que deseja cancelar o agendamento?")
   
         if (isConfirm) {
+          // Chama a função com chamada de DELETE para api.
           scheduleCancel({ id })
         }
 

@@ -9,7 +9,9 @@ export async function scheduleCancel({ id }) {
 
     alert("Agendamento cancelado com sucesso!")
     
+    // Recarrega com os novos horários.
     await schedulesDay()
+    
   } catch (error) {
     console.log(error)
     alert("Não foi possível cancelar o cancelamento")
