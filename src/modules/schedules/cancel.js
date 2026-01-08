@@ -1,3 +1,5 @@
+import { scheduleCancel } from "../../services/schedule-cancel.js"
+
 const periods = document.querySelectorAll('.period')
 
 // Gerar evento de click para cada lista.
@@ -13,7 +15,7 @@ periods.forEach((period) => {
         const isConfirm = confirm("Tem certeza que deseja cancelar o agendamento?")
   
         if (isConfirm) {
-          console.log("Removeu")
+          scheduleCancel({ id })
         }
 
       }
