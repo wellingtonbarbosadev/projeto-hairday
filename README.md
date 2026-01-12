@@ -51,7 +51,7 @@ projeto-hairday/
 
 1. Clone o repositório:
 ```bash
-git clone <url-do-repositorio>
+git clone https://github.com/wellingtonbarbosadev/projeto-petshop/
 cd projeto-hairday
 ```
 
@@ -116,5 +116,7 @@ Wellington Barbosa - Projeto do Curso RocketSeat
 ## 📄 Licença
 
 Este projeto foi desenvolvido como parte do curso da RocketSeat.
+
+---
 
 Desenvolvido com 💜 por Wellington Wesley
