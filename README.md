@@ -111,7 +111,7 @@ A API REST disponibiliza os seguintes endpoints:
 
 ## 👨‍💻 Desenvolvido por
 
-Wellington Wesley - Projeto do Curso RocketSeat
+Wellington Barbosa - Projeto do Curso RocketSeat
 
 ## 📄 Licença
 
