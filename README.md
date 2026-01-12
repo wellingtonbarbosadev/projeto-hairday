@@ -115,8 +115,6 @@ Wellington Wesley - Projeto do Curso RocketSeat
 
 ## 📄 Licença
 
-Este projeto foi desenvolvido para fins educacionais.
+Este projeto foi desenvolvido como parte do curso da RocketSeat.
 
----
-
-⭐ Desenvolvido com dedicação durante o curso da [RocketSeat](https://rocketseat.com.br/)
+Desenvolvido com 💜 por Wellington Wesley
